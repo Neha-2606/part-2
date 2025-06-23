@@ -1,0 +1,115 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-image: url('../images/bg.jpg'); /* Fixed background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+}
+
+form {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+form label {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+input {
+  width: 60px;
+  padding: 5px;
+}
+
+button {
+  padding: 5px 10px;
+  margin-left: 10px;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+#errorMsg {
+  color: red;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.tableContainer {
+  max-height: 500px;
+  max-width: 80%;
+  overflow: auto;
+  border: 1px solid #ccc;
+  margin: 0 auto; /* Center horizontally */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background for readability */
+  padding: 10px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: auto;
+  background-color: #ffe6f0;
+}
+
+th, td {
+  border: 1px solid #999;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #ffccd5;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+td:first-child,
+th:first-child {
+  background-color: #ffb6c1;
+  position: sticky;
+  left: 0;
+  z-index: 1;
+}
+
+tr:nth-child(even) td {
+  background-color: #ffe6ec;
+}
+
+.slider {
+  width: 100px;
+  margin: 10px 0;
+}
+
+#tabs {
+  margin-top: 20px;
+}
+
+.tab-content {
+  padding: 10px;
+}
+
+.delete-tab {
+  margin-left: 10px;
+  color: red;
+  cursor: pointer;
+}
+
+#deleteAllTabs {
+  margin-top: 10px;
+  padding: 5px 10px;
+}

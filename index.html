@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dynamic Multiplication Table - Part 2</title>
+ 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+ 
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!--
+    Author: [Neha Gaddala]
+    Contact: [neha_gaddala@student.uml.edu]
+    Description: Enhanced multiplication table generator for COMP 4610 HW4 Part 2.
+    Uses jQuery Validation Plugin for form validation, jQuery UI for sliders and tabs,
+    and includes a reset button to return to starting state. Fixed background image.
+    Sources:
+    - jQuery Validation: https://jqueryvalidation.org/
+    - jQuery UI: https://jqueryui.com/
+    - Original CSS and JS from previous assignment
+  -->
+  <h1>Multiplication Table Generator</h1>
+
+  <div id="tabs">
+    <ul>
+      <li><a href="#input-tab">Input</a></li>
+    </ul>
+    <div id="input-tab" class="tab-content">
+      <form id="tableForm">
+        <label>Start Column:
+          <input type="number" id="startCol" name="startCol" required>
+          <div id="startColSlider" class="slider"></div>
+        </label>
+        <label>End Column:
+          <input type="number" id="endCol" name="endCol" required>
+          <div id="endColSlider" class="slider"></div>
+        </label>
+        <label>Start Row:
+          <input type="number" id="startRow" name="startRow" required>
+          <div id="startRowSlider" class="slider"></div>
+        </label>
+        <label>End Row:
+          <input type="number" id="endRow" name="endRow" required>
+          <div id="endRowSlider" class="slider"></div>
+        </label>
+        <button type="submit">Generate Table</button>
+        <button type="button" id="resetButton">Reset</button>
+      </form>
+      <div id="errorMsg"></div>
+      <button id="deleteAllTabs">Delete All Tables</button>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
